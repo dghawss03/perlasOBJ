@@ -64,3 +64,17 @@ html,body{max-width:100%;overflow-x:clip}.nav-dropdown>.nav-dropdown-main{positi
 .about-story{padding-top:165px;padding-bottom:135px}
 @media(max-width:850px){.about-story{padding-top:112px;padding-bottom:100px}}
 @media(max-width:560px){.about-story{padding-top:92px;padding-bottom:78px}}
+
+/* Stabiler Hero-Aufbau: feste Inhaltszonen verhindern springende CTAs. */
+.hero-panel{display:grid;grid-template-rows:auto 244px 104px auto;align-content:center;align-items:start;justify-content:stretch;row-gap:18px}
+.hero-panel h1,.hero-panel h2{margin:0;align-self:start}
+.hero-panel>p{margin:0;align-self:start}
+.hero-actions{margin-top:0;align-self:start}
+@media(min-width:851px) and (max-width:1200px){.hero-panel{grid-template-rows:auto 250px 120px auto;row-gap:14px}}
+@media(max-width:850px){.hero-slide{grid-template-rows:52% 48%}.hero-panel{padding:28px 32px 62px;grid-template-rows:auto 116px 58px auto;row-gap:10px}}
+@media(max-width:560px){.hero-slider{height:840px}.hero-slide{grid-template-rows:40% 60%}.hero-panel{padding:26px 20px 70px;grid-template-rows:auto 176px 96px auto;row-gap:8px}}
+@media(max-width:390px){.hero-slider{height:870px}}
+
+/* Redaktionelle Bausteine für ausführliche Ratgeberbeiträge. */
+.article-body section{padding-top:8px}.article-body h3{font-family:'Manrope',sans-serif;font-size:24px;line-height:1.35;margin:0 0 10px}.article-body ul,.article-body ol{margin:24px 0 34px;padding-left:25px;color:var(--muted)}.article-body li{padding-left:8px;margin:11px 0;font-size:18px;line-height:1.65}.article-body li::marker{color:var(--teal);font-weight:600}.article-item-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0 38px}.article-item-grid>div{padding:26px;background:#f1f4f5;border-top:3px solid var(--teal)}.article-item-grid p{font-size:17px;margin:0}.article-note{margin:34px 0;padding:30px 32px;background:var(--navy);color:white;border-left:5px solid var(--teal)}.article-note strong{display:block;font-family:'Manrope',sans-serif;font-size:22px;margin-bottom:10px}.article-note p{color:#dbe5e9;margin:0;font-size:17px}.article-inline-image{margin:42px 0}.article-inline-image img{height:460px;object-position:center}.article-inline-image figcaption{padding:14px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.55}.article-related{margin-top:70px;padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:28px;flex-wrap:wrap}.article-related>span{margin-right:auto;font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.article-related a{display:inline-flex;align-items:center;gap:8px;color:var(--teal-dark);font-weight:600}.article-related svg{width:17px}.article-cta{margin-top:55px!important}.article-cta h2{margin-top:0}
+@media(max-width:560px){.article-item-grid{grid-template-columns:1fr}.article-item-grid>div{padding:22px}.article-body h3{font-size:22px}.article-body li{font-size:16px}.article-note{padding:24px 20px}.article-inline-image{margin:34px -20px}.article-inline-image img{height:280px}.article-inline-image figcaption{padding:12px 20px}.article-related{align-items:flex-start;flex-direction:column;gap:18px}.article-related>span{margin-right:0}.article-cta{margin-top:42px!important}}
