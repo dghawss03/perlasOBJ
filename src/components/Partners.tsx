@@ -1,0 +1,2 @@
+import { partners } from '../data/company'
+export function Partners(){return <section className="partners section" id="referenzen"><span className="eyebrow">Partnerschaften</span><div className="section-head"><h2>Vertrauen, das verbindet.</h2><p>Langfristige Zusammenarbeit entsteht durch Verbindlichkeit, Transparenz und gute Ergebnisse.</p></div><div className="partner-row">{partners.map(p=><div key={p}>{p}<small>Demo / Freigabe ausstehend</small></div>)}</div></section>}

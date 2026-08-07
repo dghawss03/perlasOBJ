@@ -1,0 +1,2 @@
+import { useState } from 'react'
+export function BeforeAfter(){const [pos,setPos]=useState(54); return <div className="compare" style={{'--position':`${pos}%`} as React.CSSProperties}><div className="compare-image after"/><div className="compare-image before"/><span className="compare-label left">Vorher</span><span className="compare-label right">Nachher</span><div className="compare-line"><span>↔</span></div><input aria-label="Vorher-Nachher-Vergleich" type="range" min="8" max="92" value={pos} onChange={e=>setPos(+e.target.value)}/></div>}

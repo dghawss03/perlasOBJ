@@ -1,0 +1,2 @@
+import { ArrowRight } from 'lucide-react'; import { Link } from 'react-router-dom'
+export function ContactBand(){return <section className="contact-band"><div><span className="eyebrow light">Direkter Kontakt</span><h2>Wie können wir Ihr Objekt unterstützen?</h2><p>Sprechen Sie mit uns über Ihre Immobilie und Ihre Anforderungen.</p></div><div><Link className="button button-white" to="/kontakt">Kontakt aufnehmen <ArrowRight/></Link><a href="tel:+491776867145">0177 6867145</a><a href="mailto:mail@perlas.de">mail@perlas.de</a></div></section>}
