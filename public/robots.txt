@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /perlasOBJ/
+
+Sitemap: https://dghawss03.github.io/perlasOBJ/sitemap.xml
