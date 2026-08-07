@@ -1,2 +1,2 @@
-import { useEffect } from 'react'; import { Outlet, useLocation } from 'react-router-dom'; import { Header } from './Header'; import { Footer } from './Footer'
-export function SiteLayout(){const {pathname}=useLocation();useEffect(()=>{try{window.scrollTo({top:0,left:0,behavior:'auto'})}catch{/* Navigation funktioniert auch ohne Scroll-Reset. */}},[pathname]);return <><Header/><main id="main"><Outlet/></main><Footer/></>}
+import { useEffect } from 'react'; import { Outlet, useLocation } from 'react-router-dom'; import { Header } from './Header'; import { Footer } from './Footer'; import { ConsentManager } from './consent/ConsentManager'
+export function SiteLayout(){const {pathname}=useLocation();useEffect(()=>{try{window.scrollTo({top:0,left:0,behavior:'auto'})}catch{/* Navigation funktioniert auch ohne Scroll-Reset. */}},[pathname]);return <><Header/><main id="main"><Outlet/></main><Footer/><ConsentManager/></>}
