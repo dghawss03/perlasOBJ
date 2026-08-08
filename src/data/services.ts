@@ -9,6 +9,8 @@ export type Service={
  areas:string[]
  image:string
  imageAlt:string
+ benefitImage?:string
+ benefitImageAlt?:string
  metaTitle:string
  metaDescription:string
  detailHeading:string
@@ -26,7 +28,7 @@ export const services:Service[]=[
   intro:'Professionelle Objektbetreuung betrachtet eine Immobilie als zusammenhängendes Ganzes: mit regelmäßiger Präsenz, klaren Zuständigkeiten und nachvollziehbaren Rückmeldungen.',
   details:['Planmäßige Objektbegehungen mit definierten Kontrollpunkten','Koordination wiederkehrender Services und externer Fachpartner','Fotodokumentation, Mängelmeldung und Nachverfolgung'],
   areas:['Büro- und Gewerbeimmobilien','Wohnanlagen und gemischt genutzte Objekte','Verwaltungsstandorte und öffentliche Gebäude'],
-  image:'/images/perlas-hero-concept.png',imageAlt:'Mitarbeiter bei der Kontrolle einer modernen Gewerbeimmobilie',
+  image:'/images/services/objektbetreuung-immobilie.webp',imageAlt:'Moderne Gewerbeimmobilie in städtischer Lage',
   metaTitle:'Professionelle Objektbetreuung für Immobilien',
   metaDescription:'Professionelle Objektbetreuung für Gewerbeimmobilien: Perlas koordiniert Services, dokumentiert Auffälligkeiten und entlastet Hausverwaltungen.',
   detailHeading:'Das Objekt verlässlich im Blick behalten.',
@@ -100,7 +102,8 @@ export const services:Service[]=[
   intro:'Winterdienst für Gewerbeimmobilien beginnt vor dem ersten Frost. Flächen, Prioritäten, Zugangszeiten und Kommunikationswege werden vorab eindeutig abgestimmt.',
   details:['Saisonvorbereitung mit Flächen- und Prioritätenplan','Wettermonitoring sowie organisierte Räum- und Streubereitschaft','Zeitnahe Einsatzdokumentation für Verwaltung und Auftraggeber'],
   areas:['Gehwege, Eingangsbereiche und Verbindungspfade','Zufahrten, Ladezonen und betriebliche Verkehrsflächen','Parkplätze und klar definierte Teilflächen von Gewerbeobjekten'],
-  image:'/images/perlas-team-concept.png',imageAlt:'Facility-Team auf dem Außengelände einer Gewerbeimmobilie',
+  image:'/images/services/winterdienst-hero.jpg',imageAlt:'Mitarbeiter beim professionellen Winterdienst vor einer Gewerbeimmobilie',
+  benefitImage:'/images/services/winterdienst-vorteile.jpg',benefitImageAlt:'Mitarbeiter streut einen geräumten Zugangsweg zu einer Gewerbeimmobilie',
   metaTitle:'Winterdienst für Gewerbeimmobilien Rhein-Main',
   metaDescription:'Winterdienst für Gewerbeimmobilien im Rhein-Main-Gebiet: Flächenplanung, Bereitschaft und nachvollziehbare Räum- und Streudokumentation.',
   detailHeading:'Vorbereitet durch die Wintersaison.',

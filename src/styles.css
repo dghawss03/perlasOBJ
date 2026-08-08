@@ -85,6 +85,11 @@ html,body{max-width:100%;overflow-x:clip}.nav-dropdown>.nav-dropdown-main{positi
 @media(max-width:850px){.service-links{grid-template-columns:1fr;gap:45px}}
 @media(max-width:560px){.detail-intro>div:last-child p{font-size:17px}.service-links h2{font-size:36px}.service-links h3{font-size:20px}}
 
+/* Eigener, verlässlicher Übergang nach den langen Service-Heros. */
+.detail-intro-spaced{padding-top:155px}
+@media(max-width:850px){.detail-intro-spaced{padding-top:110px}}
+@media(max-width:560px){.detail-intro-spaced{padding-top:88px}}
+
 /* Kundentermin: klare Formular-Zwischenmeldung und belastbare schmale Layouts. */
 .contact-page>*{min-width:0}.contact-page form .form-notice{grid-column:1/-1;padding:22px 24px;background:#edf4f7;border-left:4px solid var(--teal);color:var(--ink)}.form-notice strong{display:block;margin-bottom:6px}.form-notice p{margin:0;font-size:16px;line-height:1.65;color:var(--muted)}.form-notice a{color:var(--teal-dark);font-weight:600;text-decoration:underline;text-underline-offset:3px}.detail-columns>*{min-width:0}.detail-columns p,.jobs h3{overflow-wrap:anywhere}.article-body{width:min(820px,calc(100% - 64px))}
 @media(max-width:850px){.jobs>a{gap:24px}.jobs>a>div{min-width:0}.faq-section{align-items:start}}
