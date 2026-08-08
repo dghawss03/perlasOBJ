@@ -1,2 +1,11 @@
 import { assetUrl } from '../utils/assets'
-export function PageHero({kicker,title,text,image='/images/objects/gewerbeimmobilie-hero.jpg',imageAlt='Moderne gepflegte Gewerbeimmobilie mit begrüntem Eingangsbereich'}:{kicker:string;title:string;text:string;image?:string;imageAlt?:string}){return <section className="page-hero"><div><span className="eyebrow light">{kicker}</span><h1>{title}</h1><p>{text}</p></div><img src={assetUrl(image)} alt={imageAlt}/></section>}
+
+export function PageHero({kicker,title,text,image='/images/objects/gewerbeimmobilie-hero.jpg',imageAlt='Moderne gepflegte Gewerbeimmobilie mit begrüntem Eingangsbereich'}:{kicker:string;title:string;text:string;image?:string;imageAlt?:string}){
+ return <>
+  <section className="page-hero">
+   <div><span className="eyebrow light">{kicker}</span><h1>{title}</h1><p>{text}</p></div>
+   <img src={assetUrl(image)} alt={imageAlt}/>
+  </section>
+  <div className="page-hero-spacer" aria-hidden="true" />
+ </>
+}
