@@ -113,7 +113,7 @@ body{background:var(--color-bg);color:var(--color-text)}.header{background:var(-
 @media(max-width:560px){.partner-logo img{width:min(220px,100%);max-height:60px}}
 
 /* Facelift 2026: ruhige Abstände, robuste Karten und einheitliche Breakpoints. */
-:root{--section-space:clamp(88px,8vw,132px);--content-gap:clamp(42px,6vw,88px)}
+:root{--section-space:clamp(88px,8vw,132px);--content-gap:clamp(42px,6vw,88px);--page-hero-followup-space:clamp(112px,9vw,150px)}
 body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.55}
 p{ text-wrap:pretty}.section-head h2,.hero-panel h1,.hero-panel h2,.page-hero h1,.positioning h2,.company-video-heading h2,.documentation-band h2,.contact-band h2{text-wrap:balance}
 .section{width:min(var(--container),calc(100% - clamp(40px,8vw,96px)));padding-top:var(--section-space);padding-bottom:var(--section-space)}
@@ -124,8 +124,8 @@ p{ text-wrap:pretty}.section-head h2,.hero-panel h1,.hero-panel h2,.page-hero h1
 .editorial-grid{align-items:stretch}.editorial-card{display:flex;min-width:0;height:100%;flex-direction:column}.editorial-image{height:auto;aspect-ratio:16/10}.editorial-card p{min-height:0}.editorial-card>.simple-link{align-self:flex-start;margin-top:auto}
 .industry-grid{align-items:stretch}.industry-grid article{display:flex;min-width:0;height:100%;flex-direction:column}.industry-grid article>img{height:auto;aspect-ratio:16/10}.industry-grid article>.simple-link{align-self:flex-start;margin-top:auto}
 .team-person>div{height:auto;aspect-ratio:4/5}.team-person h3{line-height:1.25}.service-promises h3{line-height:1.25}
-.page-hero + .detail-intro{padding-top:var(--section-space)}
-.page-hero + .services-overview{padding-top:clamp(112px,9vw,150px)}
+.page-hero{position:relative;isolation:isolate;overflow:hidden}
+.page-hero + .section{position:relative;clear:both;padding-top:var(--page-hero-followup-space)!important}
 .page-hero>img{object-position:center}
 .contact-page>div p{max-width:520px;font-size:16px;line-height:1.7}.contact-page label{font-size:16px}.contact-page input,.contact-page textarea{border-radius:0;min-height:54px;padding:15px 16px;transition:border-color .2s,box-shadow .2s}.contact-page textarea{min-height:150px;resize:vertical}.contact-page input:focus,.contact-page textarea:focus{outline:0;border-color:var(--color-primary);box-shadow:0 0 0 3px rgba(30,111,159,.14)}
 .hero-slide:nth-child(1) .hero-visual img{object-position:center 52%}
@@ -142,6 +142,7 @@ p{ text-wrap:pretty}.section-head h2,.hero-panel h1,.hero-panel h2,.page-hero h1
 .location-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(20px,3vw,48px) 0}.location-copy h2{margin:22px 0 20px;font-family:'Manrope',sans-serif;font-size:clamp(40px,4vw,58px);line-height:1.08;letter-spacing:-.045em}.location-copy>p{max-width:620px;margin:0 0 28px;color:var(--muted);font-size:18px;line-height:1.75}.location-copy address{display:grid;gap:5px;margin-bottom:24px;font-style:normal;font-size:17px}.location-copy address strong{margin-bottom:4px}.location-links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-bottom:30px}.location-links a{display:inline-flex;align-items:center;gap:9px;color:var(--color-primary-hover);font-weight:600}.location-links svg{width:18px}
 
 @media(max-width:1050px){
+ :root{--page-hero-followup-space:104px}
  .hero-slider{min-height:860px;padding-top:74px}.hero-slide{padding-top:74px;grid-template-columns:1fr;grid-template-rows:42% 58%}.hero-visual{grid-row:1}.hero-panel{grid-row:2;padding:36px clamp(24px,5vw,48px) 82px}.hero-arrow{top:23%}.hero-pagination{left:24px;bottom:18px}.hero-pause{right:24px;bottom:16px}
  .positioning{grid-template-columns:1fr}.positioning-image{height:clamp(380px,52vw,540px)}.positioning-copy{padding:clamp(60px,8vw,92px) clamp(32px,7vw,72px)}
  .page-hero{height:auto;min-height:0;padding-top:74px;grid-template-columns:1fr;grid-template-rows:minmax(360px,48vw) auto}.page-hero>img{grid-row:1;height:100%;min-height:0}.page-hero>div{grid-row:2;padding:58px clamp(28px,6vw,64px) 66px}.page-hero h1{font-size:clamp(44px,6.4vw,58px)}
@@ -154,12 +155,12 @@ p{ text-wrap:pretty}.section-head h2,.hero-panel h1,.hero-panel h2,.page-hero h1
  .partner-row{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-logo:last-child{grid-column:1/-1}
 }
 @media(max-width:560px){
- :root{--section-space:76px}.section{width:calc(100% - 40px)}
- .hero-slider{min-height:780px}.hero-slide{grid-template-rows:35% 65%}.hero-panel{padding:28px 20px 70px}.hero-panel h1,.hero-panel h2{font-size:clamp(35px,9.7vw,40px)}.hero-panel>p{font-size:16px;line-height:1.5}.hero-arrow{top:19%}.hero-pagination{left:12px;right:68px;gap:4px}.hero-pagination button{min-width:0;width:auto;max-width:44px;flex:1}.hero-pagination button.active{width:auto;max-width:56px}.hero-pause{right:12px;bottom:14px}.hero-slide:nth-child(3) .hero-visual img{object-position:52% center}.hero-slide:nth-child(4) .hero-visual img{object-position:63% center}
+ :root{--section-space:76px;--page-hero-followup-space:84px}.section{width:calc(100% - 40px)}
+ .hero-slider{min-height:780px}.hero-slide{grid-template-rows:35% 65%}.hero-panel{padding:28px 20px 70px}.hero-panel h1,.hero-panel h2{font-size:clamp(35px,9.7vw,40px)}.hero-panel>p{font-size:16px;line-height:1.5}.hero-arrow{top:19%}.hero-pagination{left:12px;right:88px;gap:4px}.hero-pagination button{min-width:0;width:auto;max-width:44px;flex:1}.hero-pagination button.active{width:auto;max-width:56px}.hero-pause{right:12px;bottom:14px}.hero-slide:nth-child(3) .hero-visual img{object-position:52% center}.hero-slide:nth-child(4) .hero-visual img{object-position:63% center}
  .page-hero{grid-template-rows:280px auto}.page-hero>div{padding:44px 20px 54px}.page-hero h1{font-size:clamp(36px,10vw,43px)}
  .editorial-image,.home-services .editorial-image{height:auto;aspect-ratio:4/3}.industry-feature>img{height:auto;aspect-ratio:4/3}.team-person>div{height:auto;aspect-ratio:4/5}
  .partner-row{grid-template-columns:1fr}.partner-logo,.partner-logo:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.partner-logo:last-child{grid-column:auto;border-bottom:0}
- .location-map{min-height:390px}.location-map-action{right:14px;top:14px}.location-copy h2{font-size:38px}.location-copy>p{font-size:17px}.location-links{flex-direction:column}.page-hero>img[src*="winter-service"]{object-position:center 62%}.page-hero + .services-overview{padding-top:86px}
+ .location-map{min-height:390px}.location-map-action{right:14px;top:14px}.location-copy h2{font-size:38px}.location-copy>p{font-size:17px}.location-links{flex-direction:column}.page-hero>img[src*="winter-service"]{object-position:center 62%}
  .footer-top{grid-template-columns:1fr 1fr;gap:42px 24px}.footer-top>div:first-child{grid-column:1/-1}.footer-top>div:last-child{grid-column:auto}
 }
 @media(max-width:390px){.hero-slider{min-height:800px}.footer-top{grid-template-columns:1fr}.footer-top>div:first-child{grid-column:auto}}
