@@ -138,7 +138,7 @@ p{ text-wrap:pretty}.section-head h2,.hero-panel h1,.hero-panel h2,.page-hero h1
 .location-map:hover>img,.location-map:focus-visible>img{transform:scale(1.018);filter:saturate(1.04)}
 .location-map:focus-visible{outline:3px solid var(--color-primary);outline-offset:3px}
 .location-map-action{position:absolute;z-index:1;right:24px;top:24px;display:inline-flex;align-items:center;gap:9px;padding:12px 15px;background:var(--color-primary-dark);color:white;font-weight:600;box-shadow:var(--shadow)}.location-map-action svg{width:18px}
-.page-hero>img[src*="winter-service"]{object-fit:cover;object-position:center 68%}
+.page-hero>img[src*="winter-service"]{object-fit:cover;object-position:center 68%}.page-hero>img[src*="flur-innen"]{object-position:center 60%}.page-hero>img[src*="wohnanlage-aussenpflege"]{object-position:center 66%}.page-hero>img[src*="wohnobjekt-aussen"]{object-position:center 52%}.page-hero>img[src*="einsatzfahrzeug-gewerbeobjekt"]{object-position:center 58%}.page-hero>img[src*="parkdeck-perlas-fahrzeug"]{object-position:center 54%}
 .location-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(20px,3vw,48px) 0}.location-copy h2{margin:22px 0 20px;font-family:'Manrope',sans-serif;font-size:clamp(40px,4vw,58px);line-height:1.08;letter-spacing:-.045em}.location-copy>p{max-width:620px;margin:0 0 28px;color:var(--muted);font-size:18px;line-height:1.75}.location-copy address{display:grid;gap:5px;margin-bottom:24px;font-style:normal;font-size:17px}.location-copy address strong{margin-bottom:4px}.location-links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-bottom:30px}.location-links a{display:inline-flex;align-items:center;gap:9px;color:var(--color-primary-hover);font-weight:600}.location-links svg{width:18px}
 
 @media(max-width:1050px){
@@ -155,11 +155,11 @@ p{ text-wrap:pretty}.section-head h2,.hero-panel h1,.hero-panel h2,.page-hero h1
 }
 @media(max-width:560px){
  :root{--section-space:76px}.section{width:calc(100% - 40px)}
- .hero-slider{min-height:860px}.hero-slide{grid-template-rows:35% 65%}.hero-panel{padding:28px 20px 76px}.hero-panel h1,.hero-panel h2{font-size:clamp(35px,9.7vw,40px)}.hero-panel>p{font-size:16px;line-height:1.5}.hero-arrow{top:19%}.hero-pagination{left:12px;gap:0}.hero-pause{right:12px}.hero-slide:nth-child(3) .hero-visual img{object-position:52% center}.hero-slide:nth-child(4) .hero-visual img{object-position:63% center}
+ .hero-slider{min-height:780px}.hero-slide{grid-template-rows:35% 65%}.hero-panel{padding:28px 20px 70px}.hero-panel h1,.hero-panel h2{font-size:clamp(35px,9.7vw,40px)}.hero-panel>p{font-size:16px;line-height:1.5}.hero-arrow{top:19%}.hero-pagination{left:12px;right:68px;gap:4px}.hero-pagination button{min-width:0;width:auto;max-width:44px;flex:1}.hero-pagination button.active{width:auto;max-width:56px}.hero-pause{right:12px;bottom:14px}.hero-slide:nth-child(3) .hero-visual img{object-position:52% center}.hero-slide:nth-child(4) .hero-visual img{object-position:63% center}
  .page-hero{grid-template-rows:280px auto}.page-hero>div{padding:44px 20px 54px}.page-hero h1{font-size:clamp(36px,10vw,43px)}
  .editorial-image,.home-services .editorial-image{height:auto;aspect-ratio:4/3}.industry-feature>img{height:auto;aspect-ratio:4/3}.team-person>div{height:auto;aspect-ratio:4/5}
  .partner-row{grid-template-columns:1fr}.partner-logo,.partner-logo:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.partner-logo:last-child{grid-column:auto;border-bottom:0}
  .location-map{min-height:390px}.location-map-action{right:14px;top:14px}.location-copy h2{font-size:38px}.location-copy>p{font-size:17px}.location-links{flex-direction:column}.page-hero>img[src*="winter-service"]{object-position:center 62%}.page-hero + .services-overview{padding-top:86px}
  .footer-top{grid-template-columns:1fr 1fr;gap:42px 24px}.footer-top>div:first-child{grid-column:1/-1}.footer-top>div:last-child{grid-column:auto}
 }
-@media(max-width:390px){.hero-slider{min-height:900px}.footer-top{grid-template-columns:1fr}.footer-top>div:first-child{grid-column:auto}}
+@media(max-width:390px){.hero-slider{min-height:800px}.footer-top{grid-template-columns:1fr}.footer-top>div:first-child{grid-column:auto}}
