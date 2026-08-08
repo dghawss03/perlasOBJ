@@ -9,7 +9,7 @@ import { assetUrl } from '../utils/assets'
 
 export function BlogPage(){return <>
  <SEO title="Ratgeber zu Objektbetreuung & Gebäudeservice" description="Praxiswissen von Perlas zu Objektbetreuung, Gebäudereinigung, Parkhauspflege und Winterdienst für Gewerbeimmobilien und Verwaltungen."/>
- <PageHero kicker="Ratgeber & Wissen" title="Wissen, das im Objektalltag weiterhilft." text="Praxisnahe Informationen für Hausverwaltungen, Unternehmen und Verantwortliche rund um Objektbetreuung und Gebäudeservices." image="/images/perlas-ratgeber-concept.png" imageAlt="Mitarbeiter bei der maschinellen Reinigung eines stark beanspruchten Bodens"/>
+ <PageHero kicker="Ratgeber & Wissen" title="Wissen, das im Objektalltag weiterhilft." text="Praxisnahe Informationen für Hausverwaltungen, Unternehmen und Verantwortliche rund um Objektbetreuung und Gebäudeservices." image="/images/perlas-ratgeber-concept.jpg" imageAlt="Mitarbeiter bei der maschinellen Reinigung eines stark beanspruchten Bodens"/>
  <section className="section"><div className="section-head"><div><span className="eyebrow">Praxiswissen</span><h2>Ratgeber für professionell betreute Immobilien.</h2></div><p>Materialien richtig einschätzen, Leistungen sinnvoll planen und Abläufe nachvollziehbar organisieren.</p></div><BlogPreview items={posts}/></section>
  </>}
 
