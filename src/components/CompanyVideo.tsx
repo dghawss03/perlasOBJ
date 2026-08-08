@@ -15,7 +15,7 @@ export function CompanyVideo(){
   return <section className="company-video section" aria-labelledby="company-video-title">
     <div className="company-video-heading"><span className="eyebrow">Das sind wir</span><h2 id="company-video-title">Objektbetreuung mit Verantwortung.</h2><p>Perlas ist ein familiengeführtes Unternehmen mit über 25 Jahren Erfahrung. Wir verstehen Objektbetreuung als langfristige Verantwortung für Immobilien.</p></div>
     <div className="company-video-media">
-      {playing&&consent.externalMedia?<iframe src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`} title="Perlas Unternehmensvorstellung" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>:<ExternalMediaPlaceholder image={assetUrl('images/perlas-team-concept.png')} alt="Lokales Vorschaubild der Perlas Unternehmensvorstellung" promptVisible={promptVisible} onPlay={requestPlayback} onAccept={acceptAndPlay} onSettings={openSettings}/>}
+      {playing&&consent.externalMedia?<iframe src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`} title="Perlas Unternehmensvorstellung" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>:<ExternalMediaPlaceholder image={assetUrl('images/video/perlas-unternehmen-thumbnail.jpg')} alt="Paolo Perla im Titelbild der Perlas Unternehmensvorstellung" promptVisible={promptVisible} onPlay={requestPlayback} onAccept={acceptAndPlay} onSettings={openSettings}/>}
     </div>
   </section>
 }
