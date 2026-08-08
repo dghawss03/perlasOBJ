@@ -102,7 +102,7 @@ export const services:Service[]=[
   intro:'Winterdienst für Gewerbeimmobilien beginnt vor dem ersten Frost. Flächen, Prioritäten, Zugangszeiten und Kommunikationswege werden vorab eindeutig abgestimmt.',
   details:['Saisonvorbereitung mit Flächen- und Prioritätenplan','Wettermonitoring sowie organisierte Räum- und Streubereitschaft','Zeitnahe Einsatzdokumentation für Verwaltung und Auftraggeber'],
   areas:['Gehwege, Eingangsbereiche und Verbindungspfade','Zufahrten, Ladezonen und betriebliche Verkehrsflächen','Parkplätze und klar definierte Teilflächen von Gewerbeobjekten'],
-  image:'/images/services/winterdienst-hero.jpg',imageAlt:'Mitarbeiter beim professionellen Winterdienst vor einer Gewerbeimmobilie',
+  image:'/images/services/winter-service.png',imageAlt:'Geräumter verschneiter Weg zwischen Gebäuden',
   benefitImage:'/images/services/winterdienst-vorteile.jpg',benefitImageAlt:'Mitarbeiter streut einen geräumten Zugangsweg zu einer Gewerbeimmobilie',
   metaTitle:'Winterdienst für Gewerbeimmobilien Rhein-Main',
   metaDescription:'Winterdienst für Gewerbeimmobilien im Rhein-Main-Gebiet: Flächenplanung, Bereitschaft und nachvollziehbare Räum- und Streudokumentation.',

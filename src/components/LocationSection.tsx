@@ -1,12 +1,11 @@
-import { ArrowUpRight, Globe, MapPin, Phone } from 'lucide-react'
+import { ArrowUpRight, Globe, Phone } from 'lucide-react'
+import { assetUrl } from '../utils/assets'
 
 const mapsUrl=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Perla's Objektbetreuung GmbH & Co. KG, Hauptstraße 1, 65843 Sulzbach (Taunus)")}`
 
 export function LocationSection(){return <section className="location-section section" aria-labelledby="location-title">
  <a className="location-map" href={mapsUrl} target="_blank" rel="noreferrer" aria-label="Standort von Perlas in Google Maps öffnen">
-  <span className="location-map-grid" aria-hidden="true"/>
-  <span className="location-pin" aria-hidden="true"><MapPin/></span>
-  <span className="location-map-label"><small>Standort</small><strong>Sulzbach (Taunus)</strong></span>
+  <img src={assetUrl('/images/location/google-maps.png')} alt="Google-Maps-Kartenausschnitt mit dem Standort von Perlas in Sulzbach (Taunus)"/>
   <span className="location-map-action">Route öffnen <ArrowUpRight/></span>
  </a>
  <div className="location-copy">
