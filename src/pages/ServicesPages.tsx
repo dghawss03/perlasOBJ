@@ -9,6 +9,12 @@ import { services } from '../data/services'
 import { serviceDetailContent } from '../data/serviceDetails'
 import { assetUrl } from '../utils/assets'
 
+const serviceHeroPlaceholders:Partial<Record<string,string>>={
+ gebaeudereinigung:'Passendes Bild Gebäudereinigung hinzufügen',
+ aussenanlagenpflege:'Passendes Bild Außenreinigung hinzufügen',
+ winterdienst:'Passendes Bild Winterdienst hinzufügen',
+}
+
 export function ServicesPage(){return <>
  <SEO title="Facility Services & Gebäudeservice Rhein-Main" description="Facility Services und professionelle Objektbetreuung im Rhein-Main-Gebiet: Perlas bündelt Gebäudeservices für Hausverwaltungen und Unternehmen."/>
  <PageHero kicker="Leistungen" title="Alles für ein professionell betreutes Objekt." text="Von Objektbetreuung und Gebäudereinigung bis zu Außenpflege und technischen Services: Wir bündeln Leistungen passend zu Ihrer Immobilie und Ihren Abläufen." image="/images/perlas-praxis-concept.jpg" imageAlt="Mitarbeitende bei der maschinellen Objektpflege in einer Tiefgarage"/>
@@ -27,7 +33,7 @@ export function ServiceDetailPage(){
  const detail=serviceDetailContent[service.slug]
  return <>
   <SEO title={service.metaTitle} description={service.metaDescription}/>
-  <PageHero kicker={service.category} title={service.title} text={service.intro} image={service.image} imageAlt={service.imageAlt}/>
+  <PageHero kicker={service.category} title={service.title} text={service.intro} image={service.image} imageAlt={service.imageAlt} placeholderLabel={serviceHeroPlaceholders[service.slug]}/>
 
   <section className="service-detail-intro section" aria-labelledby="service-detail-title">
    <div className="service-detail-copy"><span className="eyebrow">Leistung im Detail</span><h2 id="service-detail-title">{service.detailHeading}</h2><p className="service-detail-lead">{service.summary}</p>{service.overview?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</div>
