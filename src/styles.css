@@ -592,3 +592,101 @@ footer{margin-top:clamp(54px,7vw,104px);border-radius:var(--radius-feature) var(
 @media(prefers-reduced-motion:reduce){
  .editorial-image img,.industry-grid article>img,.service-related-grid img,.industry-feature>img,.positioning-image img,.industry-detail-media img,.hero-visual img{transition:none!important}
 }
+
+/* Klare, vom Text abgesetzte Zustände der Hauptnavigation. */
+.header .nav-link{
+ position:relative;
+ text-decoration:none!important;
+}
+
+.header nav>.nav-link:not(.mobile-phone)::after,
+.header .nav-dropdown-main>.nav-link::after{
+ content:'';
+ position:absolute;
+ left:0;
+ right:0;
+ bottom:-10px;
+ display:block;
+ height:2px;
+ border-radius:999px;
+ background:var(--color-primary);
+ opacity:0;
+ transform:scaleX(.45);
+ transform-origin:center;
+ transition:opacity .2s ease,transform .2s ease;
+}
+
+.header nav>.nav-link:not(.mobile-phone):hover::after,
+.header .nav-dropdown-main>.nav-link:hover::after{
+ opacity:.42;
+ transform:scaleX(1);
+}
+
+.header nav>.nav-link.is-active:not(.mobile-phone),
+.header .nav-dropdown-main>.nav-link.is-active{
+ color:var(--color-primary);
+}
+
+.header nav>.nav-link.is-active:not(.mobile-phone)::after,
+.header .nav-dropdown-main>.nav-link.is-active::after{
+ opacity:1;
+ transform:scaleX(1);
+}
+
+.nav-dropdown>.nav-submenu .nav-submenu-link{
+ text-decoration:none;
+}
+
+.nav-dropdown>.nav-submenu .nav-submenu-link.is-active{
+ color:var(--color-primary-hover);
+ background:var(--color-bg-muted);
+ box-shadow:inset 3px 0 0 var(--color-primary);
+}
+
+/* Alle Leistungskarten nutzen denselben Rahmen; nur der Motivfokus variiert. */
+.home-services .editorial-image,
+.services-overview .editorial-image,
+.service-related-grid img{
+ width:100%;
+ height:auto;
+ aspect-ratio:16/10;
+ overflow:hidden;
+ background:var(--color-bg-muted);
+}
+
+.home-services .editorial-image img,
+.services-overview .editorial-image img,
+.service-related-grid img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+}
+
+@media(max-width:1050px){
+ .header nav>.nav-link:not(.mobile-phone)::after,
+ .header .nav-dropdown-main>.nav-link::after{
+  right:auto;
+  bottom:3px;
+  width:36px;
+ }
+
+ .header nav>.nav-link.is-active:not(.mobile-phone),
+ .header .nav-dropdown-main>.nav-link.is-active{
+  color:var(--color-accent-light);
+ }
+
+ .header nav>.nav-link.is-active:not(.mobile-phone)::after,
+ .header .nav-dropdown-main>.nav-link.is-active::after{
+  display:block;
+  background:var(--color-accent-light);
+ }
+}
+
+@media(max-width:560px){
+ .home-services .editorial-image,
+ .services-overview .editorial-image,
+ .service-related-grid img{
+  height:auto;
+  aspect-ratio:4/3;
+ }
+}

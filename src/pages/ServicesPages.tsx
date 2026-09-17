@@ -63,7 +63,7 @@ export function ServiceDetailPage(){
 
   {(service.relatedServices?.length||service.relatedArticles?.length)?<section className="service-related section-surface" aria-labelledby="service-related-title">
    <div className="service-section-heading"><span className="eyebrow">Passende Themen</span><h2 id="service-related-title">Verwandte Leistungen sinnvoll verbinden.</h2></div>
-   {service.relatedServices?.length?<div className="service-related-grid">{service.relatedServices.map(link=>{const related=services.find(item=>`/leistungen/${item.slug}`===link.href);if(!related)return null;return <Link to={link.href} key={link.href}><img src={assetUrl(related.image)} alt="" loading="lazy"/><span>{related.category}</span><h3>{related.title}</h3><p>{related.summary}</p><b>Leistung ansehen <ArrowRight/></b></Link>})}</div>:null}
+   {service.relatedServices?.length?<div className="service-related-grid">{service.relatedServices.map(link=>{const related=services.find(item=>`/leistungen/${item.slug}`===link.href);if(!related)return null;return <Link to={link.href} key={link.href}><img src={assetUrl(related.image)} alt="" loading="lazy" style={{objectPosition:related.imagePosition??'50% 50%'}}/><span>{related.category}</span><h3>{related.title}</h3><p>{related.summary}</p><b>Leistung ansehen <ArrowRight/></b></Link>})}</div>:null}
    {service.relatedArticles?.length?<nav className="service-reading" aria-label="Passende Ratgeber"><span>Passende Ratgeber</span>{service.relatedArticles.map(link=><Link key={link.href} to={link.href}>{link.label}<ArrowRight/></Link>)}</nav>:null}
   </section>:null}
   <ContactBand/>
